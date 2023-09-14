@@ -1,0 +1,85 @@
+/* style.css */
+
+/* Reset some default styling */
+body, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image */
+body {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Style the heading */
+h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style the form */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the buttons */
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style the Submit button with a travel-inspired color */
+.btn.submit {
+    background-color: #ff9800;
+    color: red;
+}
+
+/* Style the Reset button */
+.btn.reset {
+    background-color: #e57373;
+    color: red;
+}
+
+/* Apply a bit of spacing between buttons */
+.btn + .btn {
+    margin-left: 0;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+}
